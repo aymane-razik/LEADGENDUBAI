@@ -1,0 +1,41 @@
+<svg width="1600" height="560" viewBox="0 0 1600 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="82" y1="34" x2="1510" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101827"/><stop offset=".54" stop-color="#142A35"/><stop offset="1" stop-color="#172018"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="1120" y1="76" x2="1472" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2FF8A"/><stop offset="1" stop-color="#9CE8B7"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="1114" y1="302" x2="1435" y2="489" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75DFF0"/><stop offset="1" stop-color="#A0EBC1"/>
+    </linearGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" stroke="#D9F3E4" stroke-opacity=".08"/></pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="38"/></filter>
+  </defs>
+  <rect width="1600" height="560" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="560" rx="34" fill="url(#grid)"/>
+  <ellipse cx="1320" cy="140" rx="178" ry="148" fill="#C9F879" fill-opacity=".16" filter="url(#blur)"/>
+  <ellipse cx="1230" cy="455" rx="160" ry="90" fill="#73DFF0" fill-opacity=".14" filter="url(#blur)"/>
+  <path d="M0 427C212 356 352 504 551 432C745 362 801 484 985 432V560H0V427Z" fill="#0A111C" fill-opacity=".52"/>
+  <g opacity=".72" stroke="#D4F3E1" stroke-opacity=".28">
+    <path d="M1124 414V230L1171 194V414"/><path d="M1190 414V154L1236 117V414"/><path d="M1255 414V220L1294 189V414"/>
+    <path d="M1320 414V125L1366 82V414"/><path d="M1390 414V211L1431 178V414"/><path d="M1124 271H1171M1190 215H1236M1255 278H1294M1320 191H1366M1390 266H1431"/>
+  </g>
+  <path d="M1067 402C1160 342 1211 363 1273 319C1327 281 1372 285 1451 217" stroke="url(#cyan)" stroke-width="2" stroke-dasharray="4 10"/>
+  <circle cx="1067" cy="402" r="5" fill="#79E0EA"/><circle cx="1273" cy="319" r="5" fill="#D5F881"/><circle cx="1451" cy="217" r="6" fill="#D5F881"/>
+  <g transform="translate(86 77)">
+    <rect width="42" height="42" rx="14" fill="#D8F779"/><path d="M21 9C14.4 9 9 14.4 9 21s5.4 12 12 12 12-5.4 12-12S27.6 9 21 9Zm0 5.2a6.8 6.8 0 1 1 0 13.6 6.8 6.8 0 0 1 0-13.6Z" fill="#172018"/>
+    <text x="57" y="28" fill="#F4F6EE" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">DUNE</text><circle cx="123" cy="24" r="3" fill="#D8F779"/>
+  </g>
+  <text x="88" y="235" fill="#D8F779" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="4">REAL ESTATE INTELLIGENCE · DUBAI</text>
+  <text x="82" y="315" fill="#F6F7F0" font-family="Inter,Arial,sans-serif" font-size="66" font-weight="600" letter-spacing="-3">Every signal.</text>
+  <text x="82" y="389" fill="#F6F7F0" font-family="Inter,Arial,sans-serif" font-size="66" font-weight="600" letter-spacing="-3">Every opportunity.</text>
+  <text x="88" y="456" fill="#B9C7C4" font-family="Inter,Arial,sans-serif" font-size="17">A modern workspace for the people, places, and decisions</text>
+  <text x="88" y="485" fill="#B9C7C4" font-family="Inter,Arial,sans-serif" font-size="17">that move Dubai real estate forward.</text>
+  <g transform="translate(1190 445)">
+    <rect width="310" height="52" rx="16" fill="#101A25" fill-opacity=".8" stroke="#DCEED9" stroke-opacity=".15"/>
+    <circle cx="24" cy="26" r="5" fill="#D8F779"/><text x="42" y="31" fill="#DDE8D7" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.4">LEADS</text>
+    <path d="M96 16V36" stroke="#DCEED9" stroke-opacity=".22"/><circle cx="121" cy="26" r="5" fill="#75DFF0"/><text x="139" y="31" fill="#DDE8D7" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.4">HOMES</text>
+    <path d="M201 16V36" stroke="#DCEED9" stroke-opacity=".22"/><circle cx="226" cy="26" r="5" fill="#FFA47B"/><text x="244" y="31" fill="#DDE8D7" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.4">MOMENTUM</text>
+  </g>
+</svg>

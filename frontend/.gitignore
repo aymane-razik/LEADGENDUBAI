@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.next-demo/
+out/
+build/
+.env*
+!.env.example
+next-env.d.ts

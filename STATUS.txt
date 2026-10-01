@@ -1,0 +1,55 @@
+Dubai Real Estate LeadGen - Demo System
+========================================
+
+CURRENT STATE: LIVE AND RUNNING
+
+Links
+-----
+Frontend:  http://localhost:3000
+Login:     http://localhost:3000/login
+Backend:   http://localhost:5000
+Health:    http://localhost:5000/api/v1/health
+Detailed:  http://localhost:5000/api/v1/health/detailed
+
+Demo Accounts (password for all: Demo@123456)
+---------------------------------------------
+Admin:   admin@dubairealestate.com
+Manager: manager@dubairealestate.com
+Agents:  ahmed@ / omar@ / fatima@ / khalid@ / noor@ / mohammed@ @dubairealestate.com
+
+Seeded Data
+-----------
+8 users, 60 leads (full funnel spread), 141 activities, 35 properties,
+6 campaigns, 4 scrapers, 3 webhooks.
+
+Local Infrastructure (installed as Windows services, start automatically)
+-------------------------------------------------------------------------
+MongoDB 8.3      -> port 27017 (service: MongoDB)
+Redis (Memurai)  -> port 6379  (service: Memurai)
+
+How To Start / Stop Manually
+----------------------------
+Start backend API: cd backend && npm run dev     (set PORT=5000 if a stale env var exists)
+Start worker:     cd backend && npm run dev:worker
+Start frontend:  cd frontend && npm run dev       (port 3000)
+Stop all:         run stop-demo.bat  (or close the API, worker, and frontend windows)
+
+Re-seed data:    cd backend && npm run seed:demo
+
+Fix If Something Breaks
+-----------------------
+- "Node.js not found":  run-demo.bat now auto-detects C:\Program Files\nodejs
+  and offers winget install. Node v24.19.0 is installed.
+- Backend exits immediately: ensure MongoDB (27017) and Redis/Memurai (6379)
+  services are Running:  powershell "Get-Service MongoDB,Memurai"
+- PORT shows 0 in logs: a stale PORT env var is overriding .env -
+  run with:  set PORT=5000 && npm run dev
+- Frontend 500 on every page: PostCSS plugin missing -
+  npm install -D @tailwindcss/postcss tailwindcss (already done)
+
+Launchers
+---------
+run-demo.bat   full demo: checks Node (auto-installs), starts servers, opens browser
+run.bat        same without demo seeding emphasis
+seed-demo.bat  re-seed demo data only
+stop-demo.bat  kill node dev servers

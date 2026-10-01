@@ -1,0 +1,73 @@
+openapi: 3.0.3
+info:
+  title: Dubai Real Estate LeadGen API
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000/api/v1
+paths:
+  /health:
+    get:
+      summary: Basic health check
+      responses:
+        '200':
+          description: Healthy
+  /auth/register:
+    post:
+      summary: Register user
+      responses:
+        '200':
+          description: User created
+  /auth/login:
+    post:
+      summary: Login user
+      responses:
+        '200':
+          description: Login success
+  /leads:
+    get:
+      summary: List leads
+      responses:
+        '200':
+          description: Leads list
+    post:
+      summary: Create lead
+      responses:
+        '200':
+          description: Lead created
+  /properties:
+    get:
+      summary: List properties
+      responses:
+        '200':
+          description: Properties list
+    post:
+      summary: Create property
+      responses:
+        '200':
+          description: Property created
+  /activities:
+    get:
+      summary: List activities
+      responses:
+        '200':
+          description: Activities list
+  /campaigns:
+    get:
+      summary: List campaigns
+      responses:
+        '200':
+          description: Campaigns list
+  /users:
+    get:
+      summary: List users
+      responses:
+        '200':
+          description: Users list
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+security:
+  - bearerAuth: []
